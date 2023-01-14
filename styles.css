@@ -1,0 +1,167 @@
+/*CSS reset settings here*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FFD9B7;
+}
+#wrapper{
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+    #wrapper div{
+        display: inline-block;
+    }
+#logo{
+    background-color: #B97A57;
+}
+#navigation{
+    background-color: #FF7F27;
+}
+#main_content{
+    background-color: #880015;
+}
+#about{
+    background-color: #FFAEC9;
+}
+#advertisement{
+    background-color: #C8BFE7;
+    vertical-align: top;
+}
+.footer{
+    text-align: justify;
+}
+.footer div{
+    background-color: #FFFF88;
+}
+
+/*Mobile*/
+@media only screen and (max-width: 480px) {
+    #wrapper{
+        text-align: left;
+        padding: 0;
+    }
+    .header{
+        height: calc(100%/6 * 2);
+        width: 100%;
+    }
+    #logo, #navigation{
+        width: 100%;
+        height: 50%;
+    }
+    #main_content{
+        width: 100%;
+        height: calc(100%/6 * 2);
+        padding: 4%;
+    }
+    #about{
+        width: 100%;
+        height: 100%;
+    }
+    #advertisement{
+        display: none;
+    }
+    .footer{
+        text-align: justify;
+        height: calc(100%/6 * 2);
+        width: 100%;
+    }
+        .footer div{
+            margin: 10px 0px;
+            width: 100%;
+            height: calc(100%/3 - 30px);
+        }
+}
+/*Tablet*/
+@media only screen and (min-width: 481px) {
+    #wrapper{
+        text-align: left;
+        padding: 0;
+    }
+    .header{
+        width: 100%;
+        height: calc(100%/7 * 2);
+    }
+    #logo{
+        width: calc(100%/3 - 1%);
+        margin-right: 1%;
+        height: 100%;
+    }
+    #navigation{
+        width: calc((100%/3 * 2) - 1%);
+        margin-left: 1%;
+        height: 100%;
+    }
+    #main_content{
+        width: 100%;
+        height: calc(100%/7 * 4 - 4%);
+        margin: 2% 0;
+        padding: 4%;
+    }
+    #about{
+        width: 100%;
+        height: 100%;
+    }
+    #advertisement{
+        display: none;
+    }
+    .footer{
+        text-align: justify;
+        height: calc(100%/7 * 1);
+        width: 100%;
+    }
+        .footer div{
+            margin: 10px 5px;
+            width: 48%;
+            height: 100%;
+        }
+}
+/*Desktop*/
+@media only screen and (min-width: 1024px) {
+    #wrapper{
+        padding: 2%;
+    }
+    .header{
+        width: 100%;
+        height: calc(100%/7 * 2);
+    }
+    #logo{
+        width: calc(100%/3 - 1%);
+        margin-right: 1%;
+        height: 100%;
+    }
+    #navigation{
+        width: calc((100%/3 * 2) - 1%);
+        margin-left: 1%;
+        height: 100%;
+    }
+    #main_content{
+        width: 100%;
+        height: calc(95%/7 * 4 - 4%);
+        margin: 2% 0;
+        padding: 2%;
+    }
+    #about{
+        width: calc((100%/5 * 4) - 1%);
+        margin-right: 1%;
+        height: 100%;
+    }
+    #advertisement{
+        width: calc((100%/5) - 1%);
+        margin-left: 1%;
+        height: calc(100%/5 * 4);
+    }
+    .footer{
+        height: calc(100%/7 * 1);
+        width: 100%;
+    }
+        .footer div{
+            margin: 1px;
+            width: calc(100%/3 - 2px);
+            height: 100%;
+        }
+}
